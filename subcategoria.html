@@ -1,0 +1,1048 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Destacados - Locatel online</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.locatelcolombia.com/arquivos/favicon.ico?v=635931497810330000">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+        <!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="loader"></div>
+    
+    <nav class="navbar navbar-fixed-top" role="navigation">
+      <!-- botones atras y adelante -->
+    <a class="btn-nav btn-anterior" href="javascript:history.go(-1)">Anterior</a>
+    <a class="btn-nav btn-siguiente" href="javascript:history.go(1)">Siguiente</a>
+    
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo-locatel.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form" role="form">
+            <input type="text" placeholder="Ingresa tu búsqueda aquí">
+            <input type="submit" value="Buscar" />
+          </form>
+          <ul class="pull-right">
+            <li><a data-toggle="modal" data-target="#modal-tiendas" class="btn-ecom btn-location"></a></li>
+            <li><a data-toggle="modal" data-target="#modal-ayuda" class="btn-ecom btn-help"></a></li>
+            <li><a href="subcategoria.html" class="btn-ecom btn-label"></a></li>
+            <li><a href="carrito.html" class="btn-ecom btn-car active"></a></li>
+          </ul>
+          <hr>
+          <ul class="menu">
+            <li><a href="maternidad.html" id="li_cuidado">Cuidado personal</a></li>
+            <li><a href="maternidad.html" id="li_drogeria">Drogería</a></li>
+            <li><a href="maternidad.html" id="li_dermocosmetica">Dermocosmética</a></li>
+            <li><a href="maternidad.html" id="li_maternidad">Maternidad y bebes</a></li>
+            <li><a href="maternidad.html" id="li_equipos">Equipos medicos</a></li>
+            <li><a href="maternidad.html" id="li_nutricion">Nutrición especializada</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+
+    <main class="section first-section">
+      <div class="migadepan">
+        <a href="#">Locatel</a><span> / </span><a href="#">Destacados</a>
+      </div>
+      <h2>Filtra tu búsqueda</h2>
+      <hr>
+      <div>
+        <form class="filtro">
+          <div>
+            <select id="ordenar">
+              <option value="bogota">Menor precio primero</option>
+              <option value="medellin">Mayor precio primero</option>
+              <option value="cali">Mejor descuento</option>
+              <option value="cartagena">Más vendidos</option>
+            </select>
+          </div>
+          
+        </form>
+      </div>
+    </main>
+    <section class="section">
+      <h2>Ofertas</h2>
+      <hr>
+      <div class="no-carrousel">
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+
+        <div class="producto oferta">
+          <a href="producto.html" class="img-producto"><img src="img/similac-leche.png"></a>
+          <p>FORMULA INFANTIL SIMILAC NEOSURE X 370GR</p>
+          <p class="precio-antes">$40.500</p>
+          <p class="precio-ahora">$40.500</p>
+          <p class="pum">PUM: <span>$1.500</span></p>
+          <div class="mobileqty">
+            <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+            
+              <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+            
+            <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+          </div>
+          <a href="producto.html" class="btn-green carrito">Comprar</a>
+        </div>
+      </div>
+    </section>
+
+      <footer>
+        <hr>
+        <h6>Copyright © 2018 Locatel</h6>
+      </footer>
+
+      <!-- Modal zoom-->
+    <div class="modal fade" id="modal-zoom" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/similac-leche.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal tiendas-->
+    <div class="modal fade" id="modal-tiendas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://app.locatelcolombia.com/sqa_kiosko/tiendas.php?cod_tienda=1501" width="100%"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ayuda-->
+    <div class="modal fade" id="modal-ayuda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            Espacio para codigo
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>

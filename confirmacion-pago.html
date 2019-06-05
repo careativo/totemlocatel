@@ -1,0 +1,353 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Confirmación de la compra</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.locatelcolombia.com/arquivos/favicon.ico?v=635931497810330000">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+        <!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="loader"></div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <main>
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/slider-01.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/slider-01.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </main>
+
+
+    <nav class="navbar" role="navigation">
+      <!-- botones atras y adelante -->
+      <a class="btn-nav btn-anterior" href="javascript:history.go(-1)">Anterior</a>
+      <a class="btn-nav btn-siguiente" href="javascript:history.go(1)">Siguiente</a>
+    
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo-locatel.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form" role="form">
+            <input type="text" placeholder="Ingresa tu búsqueda aquí">
+            <input type="submit" value="Buscar" />
+          </form>
+          <ul class="pull-right">
+            <li><a data-toggle="modal" data-target="#modal-ayuda" class="btn-ecom btn-help"></a></li>
+            <li><a href="subcategoria.html" class="btn-ecom btn-label"></a></li>
+            <li><a href="carrito.html" class="btn-ecom btn-car active"></a></li>
+          </ul>
+          <hr>
+          <ul class="menu">
+            <li><a href="maternidad.html" id="li_cuidado">Cuidado personal</a></li>
+            <li><a href="maternidad.html" id="li_drogeria">Drogería</a></li>
+            <li><a href="maternidad.html" id="li_dermocosmetica">Dermocosmética</a></li>
+            <li><a href="maternidad.html" id="li_maternidad">Maternidad y bebes</a></li>
+            <li><a href="maternidad.html" id="li_equipos">Equipos medicos</a></li>
+            <li><a href="maternidad.html" id="li_nutricion">Nutrición especializada</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section class="section confirmacion">
+      <div class="migadepan">
+        <a href="#">Locatel</a><span> / </span><a href="#">Carrito de compras</a><span> / </span><a href="#">Pago</a><span> / </span><a href="#">Confirmación de pago</a>
+      </div>
+      <h2>Resumen de la compra</h2>
+      <hr>
+      <p>Tu compra ha sido exitosa, recibiras una copia de esta confirmación en el correo <span>mail@mail.com</span>.</p><br>
+      <p>Pedido <span>2083740598739862845-3</span></p>
+      <p>17 de diciembre de 2018</p>
+
+      <div class="row">
+        <div class="columns">
+          <h3>Dirección</h3>
+          <b>Pepito Peres</b>
+          <p>Calle 23 # 15-40</p>
+          <p>Bogotá, D. C., Bogotá</p>
+          <p>Colombia</p>
+          <p>+573184569823</p>
+        </div>
+        <div class="columns">
+          <h3>Medio de pago</h3>
+          <p class="item">Datafono</p>
+          <p class="precio">$500.600</p>
+        </div>
+        <div class="columns">
+          <h3>Resumen</h3>
+          <p class="item">Subtotal</p>
+          <p class="precio">$250.300</p>
+          <p class="item">Descuento</p>
+          <p class="precio">$-10.300</p>
+          <p class="item">Envío</p>
+          <p class="precio">$1.300</p>
+          <p class="item">IVA</p>
+          <p class="precio">$15.300</p>
+          <b class="item">Total</b>
+          <b class="precio">$500.600</b>
+        </div>
+      </div>
+
+      <div class="list-productos">
+          <div class="titulos">
+            <div>Producto</div>
+            <div>Precio unitario</div>
+            <div>Cantidad</div>
+            <div>Subtotal sin iva</div>
+            <div>Total</div>
+          </div>
+          <div >
+            <div>
+              <div class="img-producto"><img src="img/producto.jpg"></div>
+              <h3>Esterilizaror eléctrico NUK</h3>
+            </div>
+            <div>
+              <p class="precio-antes">$290.300</p>
+              <p class="precio-carrito">$250.300</p>
+            </div>
+            <div>
+              <p class="cantidad">1</p>
+            </div>
+            <div>
+              <p class="total-carrito"><span>$500.600</span></p>
+            </div>
+            <div>
+                <p class="total-carrito"><span>$550.600</span></p>
+              </div>
+          </div>
+        <hr>
+          <div >
+            <div>
+              <div class="img-producto"><img src="img/producto.jpg"></div>
+              <h3>Esterilizaror eléctrico NUK</h3>
+            </div>
+            <div>
+              <p class="precio-antes">$290.300</p>
+              <p class="precio-carrito">$250.300</p>
+            </div>
+            <div>
+              <p class="cantidad">1</p>
+            </div>
+            <div>
+              <p class="total-carrito"><span>$500.600</span></p>
+            </div>
+            <div>
+                <p class="total-carrito"><span>$550.600</span></p>
+              </div>
+          </div>
+        <hr>
+          <div >
+            <div>
+              <div class="img-producto"><img src="img/producto.jpg"></div>
+              <h3>Esterilizaror eléctrico NUK</h3>
+            </div>
+            <div>
+              <p class="precio-antes">$290.300</p>
+              <p class="precio-carrito">$250.300</p>
+            </div>
+            <div>
+              <p class="cantidad">1</p>
+            </div>
+            <div>
+              <p class="total-carrito"><span>$500.600</span></p>
+            </div>
+            <div>
+                <p class="total-carrito"><span>$550.600</span></p>
+              </div>
+          </div>
+        <hr>
+          <div >
+            <div>
+              <div class="img-producto"><img src="img/producto.jpg"></div>
+              <h3>Esterilizaror eléctrico NUK</h3>
+            </div>
+            <div>
+              <p class="precio-antes">$290.300</p>
+              <p class="precio-carrito">$250.300</p>
+            </div>
+            <div>
+              <p class="cantidad">1</p>
+            </div>
+            <div>
+              <p class="total-carrito"><span>$500.600</span></p>
+            </div>
+            <div>
+                <p class="total-carrito"><span>$550.600</span></p>
+              </div>
+          </div>
+        <hr>
+      </div>
+      <hr>
+      
+      <div class="columna">
+        <p class="text-left">Subtotal</p>
+        <p class="text-left">$250.300</p>
+      </div>
+      <div class="columna">
+        <p>Descuentos</p>
+        <p>$-10.300</p>
+      </div>
+      <div class="columna">
+        <p>Envío</p>
+        <p>$1.300</p>
+      </div>
+      <div class="columna">
+        <p>IVA</p>
+        <p>$15.300</p>
+      </div>
+      <hr>
+      <div class="columna txt-green">
+        <p class="text-right">Total</p>
+        <p class="text-right">$500.600</p>
+      </div>
+    </section>
+    <section class="alert section">
+      <h2>Pedido confirmado</h2>
+      <hr>
+      <div class="col-md-6">
+        <b>¡Su pedido ha sido confirmado con éxito!</b>
+        <p>Enviaremos al correo <span>mail@correo.com</span> los detalles de la compra.</p>
+        <p>Estamos procesando el pago, en pocos minutos recibirá un mail de confirmación de compra.</p>
+      </div>
+      <div class="col-md-6">
+        <p>El pedido ha sido realizado.<br>Si lo desea puede imprimir el boleto.</p>
+        <a href="" title="" class="btn-green">Imprimir boleto</a>
+      </div>
+    </section>
+      <footer>
+        <hr>
+        <h6>Copyright © 2018 Locatel</h6>
+      </footer>
+
+    <!-- Modal exito -->
+    <div class="modal fade" id="pago-exitoso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Pago exitoso</h2>
+          </div>
+          <div class="modal-body">
+            <b>Pago realizado con éxito, tu número de pedido es XXXXXX, una copia de tu factura llegará a tu correo y tu compra llegara a la dirección registrada en menos de 3 días.</b>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-green" data-dismiss="modal">Metodo de pago</button>
+            <button type="button" class="btn-green" data-dismiss="modal">Finalizar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal contraentrega -->
+    <div class="modal fade" id="pago-contraentrega" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h2 class="modal-title" id="myModalLabel">Pago contra entrega</h2>
+          </div>
+          <div class="modal-body">
+            <b>Por favor confirma los siguientes datos de envío:</b><br><br>
+            <p>Correo: <span>correo@mail.com</span></p>
+            <p>Ciudad: <span>xxxxxxx</span></p>
+            <p>Departamento: <span>xxxxxxxxx</span></p>
+            <p>Dirección: <span>xx xx xxx xx x</span></p>
+            <p>Detalle: <span></span></p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-white" >Cambiar datos</button>
+            <button type="button" class="btn-green" data-dismiss="modal" data-toggle="modal" data-target="#pago-exitoso">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal tiendas-->
+    <div class="modal fade" id="modal-tiendas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://app.locatelcolombia.com/sqa_kiosko/tiendas.php?cod_tienda=1501" width="100%"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ayuda-->
+    <div class="modal fade" id="modal-ayuda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            Espacio para codigo
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
