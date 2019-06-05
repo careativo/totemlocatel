@@ -149,7 +149,85 @@ $(document).ready(function(){
 
 
 
+$( "#btn-list-down" ).click(function() {
+  $( ".list-productos" ).scrollTop(500);
+});
+
+$( "#btn-list-up" ).click(function() {
+    $( ".list-productos" ).scrollTop(0);
+});
+
+$(window).on('load',function(){
+    $('#correo-ingreso').modal('show');
+});
+
+$( "#medios-pago" ).click(function() {
+    $('#banner-medios').addClass('active').delay( 800 );
+    $('#medios-de-pago, #medios-de-envio').removeClass('active').delay( 800 );
+  });
 
 
 
+$('#op-envio-2').click(function(){
+    $('#op-envio-2').addClass('active');
+    $('#op-envio-1').removeClass('active');
+    $('#op-envio-3').removeClass('active');
+    $('#rbdomiciliof').prop('checked', true);
+    $('#direccion').val('');
+    $('#tipoentrega-error').hide();
+    $('#bannerfooter').hide();
+    $('section.tiendas').hide();
+    $('.opctie').addClass('hide');
+    $('.opcbog').removeClass('hide');
+    $('.opcotr').removeClass('hide');
+    $( "section.pasoapaso li:nth-child(2)" ).removeClass('active');
+    $( "section.pasoapaso li:nth-child(3)" ).addClass('active');
+    var dept = $("#departamento option:selected").val();
+    var ciud = $("#ciudad option:selected").val();
+    $.get(`/estimarprecio/${dept}/${ciud}`,function(response, categoria){
+        $('#venvio').html(response.minprecio);
+        $('#labelvalorenvio').html('Se actualizó el valor de envío');
+        /*if(response.retirarentienda == 1){
+            $('#op-envio-2').show();
+            $("#tienda").empty();
+            $("#tienda").append("<option value=''>Seleccione una Tienda</option>");
+            response.tiendas.forEach(element => {
+                //console.log(element);
+                $("#tienda").append("<option value='"+element.id+"'>"+element.name+"</option>");
+            });
+        }else{
+            //$('#op-envio-2').hide();
+            $('#labelvalorenvio').html('');
+        }*/
+        
+        delay(function(){
+            $('#labelvalorenvio').html('');
+        }, 25000 );
+        /*$("#ciudad").empty();
+        $("#ciudad").append("<option value=''>Seleccione una Ciudad</option>");
+        response.forEach(element => {
+            //console.log(element.nombre);
+            $("#ciudad").append("<option value='"+element.codigodane+"'>"+element.nombre+"</option>");
+        });*/
+        /*$("#subcategoria").empty();
+        for(i=0; i<response.length; i++){
+        $("#subcategoria").append("<option value='"+response[i].id+"'>"+response[i].descripcion+"</option>")
+        }*/
+    });
+});
+$('#op-envio-3').click(function(){
+    $('#op-envio-2').removeClass('active');
+    $('#op-envio-1').removeClass('active');
+    $('#op-envio-3').addClass('active');
+    $('#rbtienda').prop('checked', true);
+    $('#direccion').val('Retiro en tienda');
+    $('#venvio').html("Gratis");
+    $('#tipoentrega-error').hide();
+    $('section.tiendas').hide();
+    $('.opcbog').addClass('hide');
+    $('.opcotr').addClass('hide');
+    $('.opctie').removeClass('hide');
+    $( "section.pasoapaso li:nth-child(2)" ).removeClass('active');
+    $( "section.pasoapaso li:nth-child(3)" ).addClass('active');
+});
 

@@ -589,6 +589,7 @@ section.marcas .slick-list .marca img{
 	width: 68%;
 	margin-right: 2%;
 	float: left;
+	margin-bottom: 25px;
 }
 
 .list-productos > div{
@@ -1031,6 +1032,7 @@ section .slider-productos+.slider-productos .slick-prev, section .slider-product
 
 .pasoapaso{
 	margin-bottom: 10px;
+	background-color: #fff !important;
 }
 
 .pasoapaso ol{
@@ -1080,7 +1082,7 @@ section .slider-productos+.slider-productos .slick-prev, section .slider-product
 .pasoapaso ol li::after{
 	position: absolute;
 	content: "";
-	width: 30vw;
+	width: 37vw;
 	height: 3px;
 	background-color: #00982b;
 	left: calc(50% - 14px);
@@ -1129,6 +1131,12 @@ section .slider-productos+.slider-productos .slick-prev, section .slider-product
 
 .confirmacion h2{
 	margin: 20px 20px 10px 0;
+}
+
+.datos-contacto{
+	width: 68%;
+	float: left;
+	margin-right: 2%;
 }
 
 .resumen-compra.resumen-compra-envio{
@@ -1265,6 +1273,8 @@ section .slider-productos+.slider-productos .slick-prev, section .slider-product
 .descripcion .info h1{
 	color: #00982b;
 	font-size: 2em;
+	max-height: 93px;
+	overflow-y: hidden;
 }
 
 .descripcion .info h3{
@@ -1913,6 +1923,11 @@ background-color: #e6e6e6;
 	margin-bottom: 3px;
 }
 
+.list-carrito form div label.error{
+	bottom: -22px;
+    font-size: 13px !important;
+}
+
 .list-carrito form div input[type="text"], #opciones-envio form div input[type="text"]{
 	width: 98%;
 	font-size: 1.3em;
@@ -1946,8 +1961,28 @@ background-color: #e6e6e6;
 	width: 50%;
 }
 
+.form-compra form>div div.col-md-12{
+	width: 100% !important;
+}
+
 .form-compra form>div div.nombres, form.nombres{
 	width: 100%;
+}
+
+.modal-body form.nombres .w-50{
+	width: 47%;
+	float: left;
+	font-size: 1.3em;
+    border: 1px solid #00982b;
+    padding: 5px 10px;
+	border-radius: 3px;
+	background-color: #fff;
+}
+
+.modal-body form.nombres .w-50 + p{
+	float: left;
+	font-size: 1.3em;
+	padding: 7px 4px 0;
 }
 
 form.nombres label, form.nombres input{
@@ -1960,6 +1995,17 @@ form.nombres input{
     border: 1px solid #00982b;
     padding: 5px 10px;
     border-radius: 3px;
+}
+
+.btn-secundary{
+	text-align: center;
+    width: 50%;
+    padding: 2.1% 0 1.3% 0;
+    display: block;
+    color: #00953a;
+    text-transform: uppercase;
+	cursor: pointer;
+	border: 1px solid #00982b;
 }
 
 .form-compra .check-term{
@@ -2259,6 +2305,38 @@ form #aceptaterminos-error{
 	opacity: 0.5;
 }
 
+
+.list-carrito .btns-lista{
+	position: absolute;
+    right: 33%;
+    top: 388px;
+}
+
+.list-carrito .btns-lista p{
+	float: left;
+	margin-right: 10px;
+	margin-top: 4px;
+	color: #00953a;
+}
+
+.list-carrito .btns-lista button{
+	width: 30px;
+	height: 30px;
+	-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
+	border-radius: 50px;
+	border: none;
+	background-color: transparent;
+	background-image: url(../img/arrow-left.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	transform: rotate(-90deg);
+}
+
+.list-carrito .btns-lista button:nth-child(2){
+	transform: rotate(90deg);
+}
 
 
 
@@ -2591,7 +2669,7 @@ height: 71vh;
 	-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
 	box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.23);
 	float: left;
-    margin: 0 20px 20px 0;
+    margin: 0 20px 0px 0;
 }
 
 .popover-carrito .img-producto img{
@@ -2610,11 +2688,17 @@ height: 71vh;
 	width: 20%;
 	float: left;
 	text-align: center;
+	margin-top: 0;
 }
 
 .popover-carrito .popover-productos > div{
 	display: flex;
 	align-items: center;
+}
+
+.popover-carrito .popover-productos + div{
+	border-top: 1px solid #e5e5e5;
+	padding-top: 10px;
 }
 
 .popover-carrito .popover-productos .close{
@@ -2628,8 +2712,11 @@ height: 71vh;
 }
 
 .popover-carrito .popover-productos{
-	max-height: 250px;
+	height: 400px;
 	overflow: auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .popover-carrito .popover-productos + div h4{
@@ -2651,6 +2738,7 @@ height: 71vh;
 .popover-carrito .modal-footer{
 	float: right;
 	display: block;
+	border-top: none;
 }
 
 .popover-carrito .modal-footer .btn-green{
