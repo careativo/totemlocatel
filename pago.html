@@ -1,0 +1,468 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Carrito de compras</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="shortcut icon" type="image/x-icon" href="https://www.locatelcolombia.com/arquivos/favicon.ico?v=635931497810330000">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700" rel="stylesheet">
+        <!-- // Add the new slick-theme.css if you want the default styling -->
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div id="loader"></div>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section>
+      <div class="container">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="img/slider-01.jpg" alt="...">
+            </div>
+            <div class="item">
+              <img src="img/slider-01.jpg" alt="...">
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <nav class="navbar" role="navigation">
+      <!-- botones atras y adelante -->
+    <a class="btn-nav btn-anterior" href="javascript:history.go(-1)">Anterior</a>
+    <a class="btn-nav btn-siguiente" href="javascript:history.go(1)">Siguiente</a>
+    
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html"><img src="img/logo-locatel.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <form class="navbar-form" role="form">
+            <input type="text" placeholder="Ingresa tu búsqueda aquí">
+            <input type="submit" value="Buscar" />
+          </form>
+          <ul class="pull-right">
+            <li><a data-toggle="modal" data-target="#modal-tiendas" class="btn-ecom btn-location"></a></li>
+            <li><a data-toggle="modal" data-target="#modal-ayuda" class="btn-ecom btn-help"></a></li>
+            <li><a href="subcategoria.html" class="btn-ecom btn-label"></a></li>
+            <li><a href="carrito.html" class="btn-ecom btn-car active"></a></li>
+          </ul>
+          <hr>
+          <ul class="menu">
+            <li><a href="maternidad.html" id="li_cuidado">Cuidado personal</a></li>
+            <li><a href="maternidad.html" id="li_drogeria">Drogería</a></li>
+            <li><a href="maternidad.html" id="li_dermocosmetica">Dermocosmética</a></li>
+            <li><a href="maternidad.html" id="li_maternidad">Maternidad y bebes</a></li>
+            <li><a href="maternidad.html" id="li_equipos">Equipos medicos</a></li>
+            <li><a href="maternidad.html" id="li_nutricion">Nutrición especializada</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <section class="">
+        <section class="list-carrito">
+          <h2>Carrito de compras</h2>
+          <hr>
+          <div class="list-productos">
+            <div class="titulos">
+              <div>Producto</div>
+              <div>Precio unitario</div>
+              <div>Cantidad</div>
+              <div>Subtotal sin iva</div>
+              <div>Sustituir producto</div>
+            </div>
+            <div >
+              <div>
+                <div class="img-producto"><img src="img/producto.jpg"><a href="#" class="eliminar">X</a></div>
+                <h3>Esterilizaror eléctrico NUK</h3>
+              </div>
+              <div>
+                <p class="precio-antes">$290.300</p>
+                <p class="precio-carrito">$250.300</p>
+              </div>
+              <div>
+                <div class="mobileqty">
+                  <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+                  
+                    <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+                  
+                  <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+                </div>
+              </div>
+              <div>
+                <p class="total-carrito"><span>$500.600</span></p>
+              </div>
+              <div>
+                <select>
+                  <option>substituir producto</option>
+                  <option>Criterio Locatel</option>
+                  <option>No sustituir</option>
+                  <option>Contácteme por teléfono</option>
+                </select>
+              </div>
+            </div>
+            <hr>
+            <div >
+              <div>
+                <div class="img-producto"><img src="img/producto.jpg"><a href="#" class="eliminar">X</a></div>
+                <h3>Esterilizaror eléctrico NUK</h3>
+              </div>
+              <div>
+                <p class="precio-carrito">$250.300</p>
+              </div>
+              <div>
+                <div class="mobileqty">
+                  <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+                  
+                    <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+                  
+                  <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+                </div>
+              </div>
+              <div>
+                <p class="total-carrito"><span>$500.600</span></p>
+              </div>
+              <div>
+                <select>
+                  <option>substituir producto</option>
+                  <option>Criterio Locatel</option>
+                  <option>No sustituir</option>
+                  <option>Contácteme por teléfono</option>
+                </select>
+              </div>
+            </div>
+            <hr>
+            <div >
+              <div>
+                <div class="img-producto"><img src="img/producto.jpg"><a href="#" class="eliminar">X</a></div>
+                <h3>Esterilizaror eléctrico NUK</h3>
+              </div>
+              <div>
+                <p class="precio-antes">$290.300</p>
+                <p class="precio-carrito">$250.300</p>
+              </div>
+              <div>
+                <div class="mobileqty">
+                  <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+                  
+                    <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+                  
+                  <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+                </div>
+              </div>
+              <div>
+                <p class="total-carrito"><span>$500.600</span></p>
+              </div>
+              <div>
+                <select>
+                  <option>substituir producto</option>
+                  <option>Criterio Locatel</option>
+                  <option>No sustituir</option>
+                  <option>Contácteme por teléfono</option>
+                </select>
+              </div>
+            </div>
+            <hr>
+            <div >
+              <div>
+                <div class="img-producto"><img src="img/producto.jpg"><a href="#" class="eliminar">X</a></div>
+                <h3>Esterilizaror eléctrico NUK</h3>
+              </div>
+              <div>
+                <p class="precio-carrito">$250.300</p>
+              </div>
+              <div>
+                <div class="mobileqty">
+                  <input type='button' value='-' class='qtyminus' field='quantity' onclick="('product-quantity-{{product.id}}',-1)" />
+                  
+                    <input type='text' name='quantity' value='1' class='qty' id="product-quantity-{{product.id}}"/>
+                  
+                  <input type='button' value='+' class='qtyplus' field='quantity' onclick="('product-quantity-{{product.id}}',+1)" />
+                </div>
+              </div>
+              <div>
+                <p class="total-carrito"><span>$500.600</span></p>
+              </div>
+              <div>
+                <select>
+                  <option>substituir producto</option>
+                  <option>Criterio Locatel</option>
+                  <option>No sustituir</option>
+                  <option>Contácteme por teléfono</option>
+                </select>
+              </div>
+            </div>
+            <hr>
+  
+            
+          </div>
+          
+          <section class="section resumen-compra">
+            <h2>Resumen de la compra</h2>
+            <hr>
+            <div class="columna">
+              <p class="text-left">Subtotal</p>
+              <p class="text-left">$250.300</p>
+            </div>
+            <div class="columna">
+              <p>Descuentos</p>
+              <p>$-10.300</p>
+            </div>
+            <div class="columna">
+              <p>Envío</p>
+              <p>$1.300</p>
+            </div>
+            <div class="columna">
+              <p>IVA</p>
+              <p>$15.300</p>
+            </div>
+            <hr class="green">
+            <div class="columna txt-green">
+              <p class="text-right">Total</p>
+              <p class="text-right">$500.600</p>
+            </div>
+            <hr>
+            <a type="button" class="btn-green" href="envio.html">Finalizar compra</a>
+            <a href="index.html" class="elegir">Elegir más productos</a>
+          </section>
+        </section>
+  
+        </section>
+
+    <!-- paso a paso -->
+    <section class="pasoapaso">
+      <ol>
+        <li>Resumen de la compra</li>
+        <li>Datos de envío</li>
+        <li class="active">Pago</li>
+      </ol>
+    </section>
+
+    <section class="pago">
+      <h2>Pago</h2>
+      <hr>
+      <b>Elije una de estas 4 opciones para realizar el pago</b>
+        <div>
+          <img src="img/ico-datafono.png" alt="">
+          <b>Datafono</b>
+          <p>Introduce tu tarjeta débito o crédito<br>en el datafono y sigue las instrucciones.</p>
+          <a type="button" class="btn-green" data-toggle="modal" data-target="#pago-datafono" data-backdrop="static">Pagar</a>
+        </div>
+        <div align="center">
+          <img src="img/ico-contraentrega.png" alt="">
+          <b>Contra entrega</b>
+          <p>Recibe tus productos y paga en efectivo desde tu casa o tienda de Locatel.</p>
+          <a type="button" class="btn-green" data-toggle="modal" data-target="#pago-contraentrega" data-backdrop="static">Pagar</a>
+        </div>
+        <div>
+          <img src="img/mercado-pago.png" alt="">
+          <b>Mercado pago</b>
+          <p>Escanéa el código QR<br>y Realiza el pago con tu celular.</p>
+          <a type="button" class="btn-green" data-toggle="modal" data-target="#pago-qr" data-backdrop="static">Pagar</a>
+        </div>
+
+      <!-- <div>
+        <img src="img/ico-phone-hand.png" alt="">
+        <b>Link pago</b>
+        <p>Recibe el link y realiza el pago desde tu celular</p>
+        <a type="button" class="btn-green" data-toggle="modal" data-target="#pago-exitoso" data-backdrop="static">Pagar</a>
+      </div> -->
+    </section>
+
+      <footer>
+        <hr>
+        <h6>Copyright © 2018 Locatel</h6>
+      </footer>
+
+    <!-- Modal exito -->
+    <div class="modal fade" id="pago-exitoso" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Pago exitoso</h2>
+          </div>
+          <div class="modal-body">
+            <b>Pago realizado con éxito</b>
+            <p>Tu número de pedido es <b>XXXXXX</b></p>
+            <p>Una copia de tu factura llegará a tu correo y tu compra llegara a la dirección registrada en menos de 3 días.</p><br>
+            <p>Si tienes alguna petición, solicitud, queja o reclamación comuníquese a la linea 01800 0000000</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-green" data-dismiss="modal">Cambiar metodo de pago</button>
+            <a type="button" class="btn-green" href="confirmacion-pago.html">Finalizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal qr -->
+    <div class="modal fade" id="pago-qr" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Paga con Marca pago</h2>
+          </div>
+          <div class="modal-body">
+            <b>Escanea este código:</b>
+            <p>Debe tener instalado en su celular el aplicativo móvil de Mercado Pago, donde podrá escanear el código y terminar su proceso de compra desde su celular.</p>
+            <img class="" src="img/QRCode.png" alt="">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-green" data-dismiss="modal">Cambiar metodo de pago</button>
+            <a type="button" class="btn-green" href="confirmacion-pago.html">Finalizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal datafono 01-->
+    <div class="modal fade" id="pago-datafono" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Paga con datafono</h2>
+          </div>
+          <div class="modal-body">
+            <img class="pull-left" src="img/datafono-insert.png" alt="">
+            <b>Solo se recibe tarjetas debito, por favor realizar el siguiente proceso en el datafono</b><br>
+            <ol>
+              <li>Presionar el botón verde.</li>
+              <li>Inserte la tarjeta</li>
+              <li>Selecciona tarjeta de Ahorros (Es la que actualmente recibimos)</li>
+              <li>Solicita contraseña. (Por favor ingresar su contraseña)</li>
+              <li>Presionar la tecla verde para continuar</li>
+            </ol>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-green" data-dismiss="modal">Cambiar metodo de pago</button>
+            <a type="button" class="btn-green" data-dismiss="modal" data-toggle="modal" data-target="#pago-datafono-02">Finalizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal datafono 02 -->
+    <div class="modal fade" id="pago-datafono-02" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Paga con datafono</h2>
+          </div>
+          <div class="modal-body">
+            <img class="pull-left" src="img/datafono.gif" alt="">
+            <b>Pago realizado con éxito</b>
+            <p>Tu número de pedido es <b>XXXXXX</b></p>
+            <p>Una copia de tu factura llegará a tu correo y tu compra llegara a la dirección registrada en menos de 3 días.</p><br>
+            <p>Si tienes alguna petición, solicitud, queja o reclamación comuníquese a la linea 01800 0000000</p>
+          </div>
+          <div class="modal-footer">
+            <a type="button" class="btn-green" href="confirmacion-pago.html">Finalizar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal contraentrega -->
+    <div class="modal fade" id="pago-contraentrega" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="myModalLabel">Pago contra entrega</h2>
+          </div>
+          <div class="modal-body">
+            <b>Por favor confirma los siguientes datos de envío:</b><br><br>
+            <p>Correo: <span>correo@mail.com</span></p>
+            <p>Ciudad: <span>xxxxxxx</span></p>
+            <p>Departamento: <span>xxxxxxxxx</span></p>
+            <p>Dirección: <span>xx xx xxx xx x</span></p>
+            <p>Detalle: <span></span></p>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn-white" >Cambiar metodo de pago</button>
+            <button type="button" class="btn-green" data-dismiss="modal" data-toggle="modal" data-target="#pago-exitoso">Confirmar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <!-- Modal tiendas-->
+    <div class="modal fade" id="modal-tiendas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="http://app.locatelcolombia.com/sqa_kiosko/tiendas.php?cod_tienda=1501" width="100%"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal ayuda-->
+    <div class="modal fade" id="modal-ayuda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          </div>
+          <div class="modal-body">
+            Espacio para codigo
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script type="text/javascript" src="slick/slick.min.js"></script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
