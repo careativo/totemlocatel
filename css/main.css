@@ -2611,7 +2611,7 @@ height: 71vh;
 
 .popover-carrito{
 	position: absolute;
-	width: 400px;
+	width: 500px;
 	top: 62%;
 	z-index: 2000;
 	right: 42px;
@@ -2681,7 +2681,9 @@ height: 71vh;
 	font-size: 13px;
 	float: left;
     width: 30%;
-    margin-top: 0;
+	margin-top: 0;
+	max-height: 42px;
+    overflow: hidden;
 }
 
 .popover-carrito .popover-productos h5{
@@ -2694,6 +2696,12 @@ height: 71vh;
 .popover-carrito .popover-productos > div{
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+    width: 100%;
+}
+
+.popover-carrito .popover-productos > div .precio-carrito{
+	min-width: 79px;
 }
 
 .popover-carrito .popover-productos + div{

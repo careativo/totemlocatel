@@ -161,10 +161,16 @@ $(window).on('load',function(){
     $('#correo-ingreso').modal('show');
 });
 
-$( "#medios-pago" ).click(function() {
-    $('#banner-medios').addClass('active').delay( 800 );
-    $('#medios-de-pago, #medios-de-envio').removeClass('active').delay( 800 );
-  });
+
+$(document).ready(function() {	
+    function changeColor() {
+        if ($('#medios-de-pago, #medios-de-envio').hasClass('active')) {
+            $('#medios-de-pago, #medios-de-envio').removeClass('active');
+            $('#banner-medios').addClass('active');
+        }
+    }
+    setInterval(changeColor, 6000);
+});
 
 
 
