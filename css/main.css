@@ -2200,9 +2200,13 @@ form.nombres input{
 	margin-left: 25%;
 }
 
-#pago-datafono .modal-body img, #pago-qr .modal-body img{
+#pago-qr .modal-body img{
 	width: 47%;
 	margin-right: 15px;
+}
+
+#pago-datafono .modal-body img{
+	width: 100%;
 }
 
 .resultadobusqueda{
