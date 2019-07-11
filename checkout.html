@@ -203,7 +203,7 @@
                         <input type="text" placeholder="000 000 0000">
                       </div>
                       <div>
-                        <label>Correo</label>
+                        <label>Correo*</label>
                         <input type="text" placeholder="correo@mail.com">
                       </div>              
                     </div>
@@ -380,12 +380,31 @@
 
           </div>
           <div class="modal-footer">
-            <a type="button" class="btn-green" >Confirmar</a>
-            <a type="button" class="btn-secundary" data-dismiss="modal" aria-label="Close">Omitir</a>
+            <a type="button" class="btn-green" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modal-envio">Confirmar</a>
+            <a type="button" class="btn-secundary" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#modal-envio">Omitir</a>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- modal metodo de envio -->
+    <div class="modal fade" id="modal-envio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4>Selecciona tu metodo de envío</h4>
+            </div>
+            <div class="modal-body">
+  
+            </div>
+            <div class="modal-footer">
+              <a id="btn-envio-domicilio" type="button" class="btn-green" data-dismiss="modal" aria-label="Close">Recibir en domicilio</a>
+              <a id="btn-envio-tienda" type="button" class="btn-green" data-dismiss="modal" aria-label="Close">Recoger en tienda</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <!-- Modal ayuda-->
     <div class="modal fade" id="modal-ayuda" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">

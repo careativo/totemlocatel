@@ -158,7 +158,7 @@ $( "#btn-list-up" ).click(function() {
 });
 
 $(window).on('load',function(){
-    $('#correo-ingreso').modal('show');
+    $('#correo-ingreso, #video-home, #info-envio').modal('show');
 });
 
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
 
 
 
-$('#op-envio-2').click(function(){
+$('#op-envio-2, #btn-envio-domicilio').click(function(){
     $('#op-envio-2').addClass('active');
     $('#op-envio-1').removeClass('active');
     $('#op-envio-3').removeClass('active');
@@ -221,7 +221,7 @@ $('#op-envio-2').click(function(){
         }*/
     });
 });
-$('#op-envio-3').click(function(){
+$('#op-envio-3, #btn-envio-tienda').click(function(){
     $('#op-envio-2').removeClass('active');
     $('#op-envio-1').removeClass('active');
     $('#op-envio-3').addClass('active');
@@ -235,5 +235,9 @@ $('#op-envio-3').click(function(){
     $('.opctie').removeClass('hide');
     $( "section.pasoapaso li:nth-child(2)" ).removeClass('active');
     $( "section.pasoapaso li:nth-child(3)" ).addClass('active');
+});
+
+$('.btn-green.carrito').click(function(){
+    $('.btn-ecom.btn-car').addClass('add-car');
 });
 
